@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #ddd;
+    --dark: rgba(0, 121, 213);
+    --textcolor: #333;
+    --light: #fff;
+    --shadow: 0 2px 5px rgba(0, 121, 213);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--textcolor);
+}
+
+body {
+    background: #ccc;
+    margin: 15px 15px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: var (--textcolor);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.wrapper {
+    display: grid;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.navbar a {
+    background: var (--textcolor);
+    display: block;
+    text-decoration: none;
+    padding: 0.4rem;
+    text-align: center;
+    color: var(--dark);
+    font-size: 1.3rem;
+    box-shadow: var(--shadow);
+}
+
+.navbar a:hover {
+    color: var(--light);
+    background: var(--dark);
+}
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+}
+.top-container header {
+    padding: 10px;
+    background: var(--primary);
+    box-shadow: var(--shadow);
+}
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+}
+.showcase p {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: var(--light);
+}
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+.top-box-a {
+    grid-area: top-box-a;
+}
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+/*Media Query*/
+
+@media (max-width: 700px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase showcase' 
+        'top-box-a top-box-b';
+    }
+    .navbar ul {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .navbar ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .top-container {
+        grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+    }
+    .navbar ul {
+        grid-template-columns: 1fr;
+    }
+}

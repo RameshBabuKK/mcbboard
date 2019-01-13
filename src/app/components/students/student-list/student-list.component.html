@@ -1,0 +1,30 @@
+<h3>Student List</h3>
+<table class="table table-primary table-hover">
+  <thead>
+    <tr class="table-primary">
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Father name</th>
+      <th scope="col">Mother name</th>
+      <th scope="col">Phone</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <tr>
+    <tr *ngFor="let stud of studentsList.students">
+      <td>{{stud.name}}</td>
+      <td>{{stud.age}}</td>
+      <td>{{stud.fathername}}</td>
+      <td>{{stud.mothername}}</td>
+      <td>{{stud.phone}}</td>
+      <td>
+        <a (click)=editCustomer(customer) class="link_text">edit</a>
+      </td>
+      <td>
+        <a (click)=deleteCustomer(customer) class="link_text">delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

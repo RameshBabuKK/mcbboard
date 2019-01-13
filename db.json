@@ -1,0 +1,15 @@
+{
+    "students": [
+    { "studentid": "a0001", "name": "bob", "age": 6, "gender": "Male", "class_id": 1, "section": "A", "admission_date": "20/01/2018", "fathername":"bobFathername", "mothername":"bobMotherName", "city": "Bangalore", "phone": 1234567890},
+    { "studentid": "a0002", "name": "ahn", "age": 7, "gender": "Female", "class_id": 2, "section": "A", "admission_date": "15/01/2018", "fathername":"ahnFathername", "mothername":"ahnMotherName", "city": "Bangalore", "phone": 1234567890},
+    { "studentid": "a0003", "name": "xi", "age": 8, "gender": "Female", "class_id": 3, "section": "A", "admission_date": "27/02/2018", "fathername":"xiFathername", "mothername":"xiMotherName", "city": "Bangalore", "phone": 1234567890},
+    { "studentid": "a0004", "name": "Babu", "age": 8, "gender": "Male", "class_id": 3, "section": "A", "admission_date": "21/12/2017", "fathername":"BabuFathername", "mothername":"BabuMotherName", "city": "Bangalore", "phone": 1234567890},
+    { "studentid": "a0005", "name": "Ramesh", "age": 9, "gender": "Male", "class_id": 5, "section": "A", "admission_date": "5/01/2018", "fathername":"RameshFathername", "mothername":"RameshMotherName", "city": "Bangalore", "phone": 1234567890},
+    { "studentid": "a0006", "name": "Kiruthika", "age": 12, "gender": "Female", "class_id": 6, "section": "C", "admission_date": "20/12/2012", "fathername":"KiruthikaFathername", "mothername":"KiruthikaMotherName", "city": "Bangalore", "phone": 2342424234},
+    { "studentid": "a0007", "name": "Thanu", "age": 6, "gender": "Female", "class_id": 1, "section": "C", "admission_date": "15/01/2016", "fathername":"ThanuFathername", "mothername":"ThanuMotherName", "city": "Bangalore", "phone": 2342542422},
+    { "studentid": "a0008", "name": "Rithika", "age": 7, "gender": "Female", "class_id": 2, "section": "A", "admission_date": "27/02/2018", "fathername":"RithikaFathername", "mothername":"RithikaMotherName", "city": "Bangalore", "phone": 234242421},
+    { "studentid": "a0009", "name": "Kanmani", "age": 14, "gender": "Female", "class_id": 8, "section": "A", "admission_date": "21/12/2007", "fathername":"KanmaniFathername", "mothername":"KanmaniMotherName", "city": "Bangalore", "phone": 223424234},
+    { "studentid": "a0010", "name": "Golu", "age": 15, "gender": "Male", "class_id": 5, "section": "B", "admission_date": "5/01/2007", "fathername":"GoluFathername", "mothername":"GoluMotherName", "city": "Bangalore", "phone": 245234424}
+    ],
+    "maincategory": ["Image gallery", "Annocement", "List classes"]
+}

@@ -1,0 +1,11 @@
+.link_text {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+table th {
+    background: #232a12;
+    color: aliceblue;
+}
