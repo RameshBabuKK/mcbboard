@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { StudentActionsTypes } from './../state/student.actions';
 import { studentReducer } from './../state/student.reducer';
 import { StudentsRec } from './../model/students';
-
+import * as studentActions from './../state/student.actions';
 
 @Component({
   selector: 'app-student-list',
@@ -21,7 +21,7 @@ error$: Observable<string>;
   constructor(private store: Store<any>) { }
 
   ngOnInit() {
-    this.store.dispatch({type: 'LOAD_STUDENT_LIST'});
+    this.store.dispatch(new studentActions.ListStudent());
     this.store.subscribe(state => {
       console.log(state);
       this.studentsList = state.students;
